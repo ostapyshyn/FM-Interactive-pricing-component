@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+  padding-block: 38px;
+  background-image: url(../../assets/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #293356;
+  }
+
+  p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #848ead;
+  }
+}
