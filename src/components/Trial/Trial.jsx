@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Trial.module.scss'
 import check from '../../assets/images/icon-check.svg'
+import ToggleSwitch from '../ToggleSwitch/ToggleSwitch'
 
 export default function Balance() {
   return (
@@ -13,6 +14,7 @@ export default function Balance() {
       </div>
       <div className={styles.billing}>
         <p className={styles.billing_desc}>Monthly Billing</p>
+        <ToggleSwitch />
         <p className={styles.billing_desc}>Yearly Billing</p>
         <p className={styles.discount}>25% discount</p>
       </div>
