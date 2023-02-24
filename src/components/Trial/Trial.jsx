@@ -6,13 +6,15 @@ export default function Balance() {
   return (
     <section className={styles.trial}>
       <div className={styles.price}>
-        <p>100K PAGEVIEWS</p>
-        <p>$16.00 / month</p>
+        <p className={styles.price_desc}>100K PAGEVIEWS</p>
+        <p className={styles.price_main}>
+          $16.00 <span>/ month</span>
+        </p>
       </div>
       <div className={styles.billing}>
-        <p>Monthly Billing</p>
-        <p>Yearly Billing</p>
-        <p>25% discount</p>
+        <p className={styles.billing_desc}>Monthly Billing</p>
+        <p className={styles.billing_desc}>Yearly Billing</p>
+        <p className={styles.discount}>25% discount</p>
       </div>
 
       <hr className={styles.line} />
