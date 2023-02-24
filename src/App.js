@@ -1,12 +1,12 @@
 import './App.css'
-import Balance from './components/Balance'
+import Trial from './components/Trial'
 import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Balance />
+      <Trial />
     </div>
   )
 }
