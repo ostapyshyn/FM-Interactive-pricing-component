@@ -7,6 +7,12 @@
   transition: all 0.2s ease-in-out;
 }
 
+:root {
+  --main-color: #a4f3eb;
+  --main-color-hover: rgb(104, 117, 217, 0.2);
+  --track-color: #ecf0fb;
+}
+
 img,
 picture,
 video,
