@@ -1,10 +1,7 @@
 import { useState } from 'react'
 import styles from './ToggleSwitch.module.scss'
 
-
-function ToggleSwitch() {
-  const [isToggled, setIsToggled] = useState(false)
-
+function ToggleSwitch({ isToggled, setIsToggled }) {
   return (
     <label className={styles.toggleSwitch}>
       <input type="checkbox" checked={isToggled} onChange={() => setIsToggled(!isToggled)} />

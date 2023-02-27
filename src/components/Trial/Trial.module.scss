@@ -1,15 +1,39 @@
+@import '../../index.scss';
+
 .trial {
   background: #ffffff;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   border-radius: 8px;
-  padding-inline: 48px;
+  padding-inline: 46px;
   padding-top: 40px;
   padding-bottom: 32px;
+  @include mq(600px) {
+    min-width: 327px;
+    padding-inline: 24px;
+    padding-top: 34px;
+  }
+  .desktopSlider {
+    margin-bottom: 104px;
+    @include mq(600px) {
+      display: none;
+    }
+  }
   .price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
+    @include mq(600px) {
+      flex-direction: column;
+    }
+    .mobileSlider {
+      width: 100%;
+      display: none;
+      @include mq(600px) {
+        display: block;
+        margin-bottom: 66px;
+      }
+    }
     .price_desc {
       font-family: 'Manrope';
       font-style: normal;
@@ -20,6 +44,14 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #848ead;
+      @include mq(600px) {
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.71429px;
+        text-transform: uppercase;
+        color: #848ead;
+      }
     }
     .price_main {
       font-family: 'Manrope';
@@ -39,8 +71,18 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
+        /* identical to box height */
+
         text-align: center;
+
         color: #848ead;
+      }
+      @include mq(600px) {
+        font-size: 32px;
+        line-height: 44px;
+
+        text-align: right;
+        letter-spacing: -0.8px;
       }
     }
   }
@@ -68,6 +110,9 @@
     gap: 16px;
     margin-bottom: 40px;
     position: relative;
+    @include mq(600px) {
+      gap: 12px;
+    }
     .billing_desc {
       font-family: 'Manrope';
       font-style: normal;
@@ -77,7 +122,8 @@
       text-align: center;
       color: #848ead;
     }
-    .discount {
+    .discount,
+    .discount_m {
       position: absolute;
       right: 17px;
       font-family: 'Manrope';
@@ -92,6 +138,18 @@
       padding-inline: 7px;
       padding-block: 3px;
     }
+    .discount {
+      @include mq(600px) {
+        display: none;
+      }
+    }
+    .discount_m {
+      display: none;
+      @include mq(600px) {
+        right: -16px;
+        display: block;
+      }
+    }
   }
   .line {
     border: none;
@@ -101,6 +159,11 @@
     margin-bottom: 32px;
     margin-left: -48px;
     margin-right: -48px;
+    @include mq(600px) {
+      margin-bottom: 24px;
+      margin-left: -24px;
+      margin-right: -24px;
+    }
 
     //     position: absolute;
     //     bottom: 0px;
@@ -111,6 +174,10 @@
     flex-direction: row;
     gap: 130px;
     align-items: center;
+    @include mq(600px) {
+      flex-direction: column;
+      gap: 35px;
+    }
     .items {
       display: flex;
       flex-direction: column;
@@ -127,5 +194,8 @@
     font-size: 12px;
     line-height: 16px;
     color: #848ead;
+    @include mq(600px) {
+      justify-content: center;
+    }
   }
 }
